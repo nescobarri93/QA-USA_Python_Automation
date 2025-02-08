@@ -1,16 +1,51 @@
-# This is a sample Python script.
+import data
+import helpers
 
-# Press Mayús+F10 to execute it or replace it with your code.
-# Press Double Shift to search everywhere for classes, files, tool windows, actions, and settings.
+class TestUrbanRoutes:
+    @classmethod
+    def setup_class(cls):
+        if helpers.is_url_reachable(data.URBAN_ROUTES_URL):
+            print("Connected to the Urban Routes server")
+        else:
+            print("Cannot connect to Urban Routes. Check the server is on and still running")
+
+    def test_set_route(self):
+        # todo S8
+        pass
+
+    def test_select_plan(self):
+        # todo S8
+        pass
+
+    def test_fill_phone_number(self):
+        # todo S8
+        pass
+
+    def test_fill_card(self):
+        # todo S8
+        pass
+
+    def test_comment_for_driver(self):
+        # todo S8
+        pass
+
+    def test_order_blanket_and_handkerchiefs(self):
+        # todo S8
+        pass
+
+    def test_order_2_ice_creams(self):
+        number_of_ice_creams = 2
+        for count in range(number_of_ice_creams):
+            # todo S8
+            pass
+
+    def test_car_search_model_appears(self):
+        # todo S8
+        pass
 
 
-def print_hi(name):
-    # Use a breakpoint in the code line below to debug your script.
-    print(f'Hi, {name}')  # Press Ctrl+F8 to toggle the breakpoint.
-
-
-# Press the green button in the gutter to run the script.
-if __name__ == '__main__':
-    print_hi('PyCharm')
-
-# See PyCharm help at https://www.jetbrains.com/help/pycharm/
+''' #deprecated
+    def test_driver_info_appears(self):
+        # todo S8
+        pass
+'''
